@@ -34,3 +34,193 @@ Commit
 Mount 
 
 
+#Sending_the_props_in_reusable_components
+
+```
+1. Make the reusable component 
+2. Make an interface for the props along with the type 
+	```
+	interface taskProps {
+    task: String;
+    }
+3. connect it to the reusable component 
+4. Send the props from the main component using the usual flow 
+5. Dont need to define the type 
+```
+
+
+#Network_Calling #Context #Reusable_Component 
+
+```
+1.Create the context 
+
+	createContext();
+
+2. Create the empty state to store the data at the time of the network calling from the api 
+3. Make a function that returns the data after making the network call 
+4. Return the Provider using the context 
+5. Make the custom hoook using the useContext hook 
+6. useContext hook -> Hook to share the state between the nested components more easily with the useState basically its the useState that can be used at the global level 
+7. Wrap the custom hook around the useContext hook and make it global for use with other components
+8. Wrap the entire appication using the provider for it to be available in whole app 
+```
+
+
+## Core Components and APIs
+
+1.  View -> container supports flexbox, style, some touch handling and accessibilty controls 
+	1. can have zero to n nested children of any type 
+	2. Has all the accessibilty properties groups its children into a single selectable component 
+	3.  Various props to play around with  
+2. Text -> Displaying text supports nesting, styling and touch handling 
+	1.  To use the consistent fonts and sizes across your application is to create a component MyAppText  that inclues them and use this component across the app
+
+	```
+	import React from 'react';
+	import { Text, StyleSheet } from 'react-native';
+	
+	const MyAppText: React.FC<{ children: React.ReactNode }> = ({ children       }) => (
+	  <Text style={styles.text}>{children}</Text>
+	);
+	
+	const styles = StyleSheet.create({
+	  text: {
+	    fontSize: 16, // Adjust the font size as needed
+	    fontFamily: 'YourFontFamily', // Replace with your desired font
+	    // Add other text styles as needed (color, fontWeight, etc.)
+	  },
+	});
+	
+	export default MyAppText;
+	
+	
+	
+	``` 
+  **This is the way to define the functional component and use it accorss   the whole project having the specific stylesheet 
+
+```/* eslint-disable prettier/prettier */
+import { Text } from "react-native";
+import MyAppText from "./myapptext";
+import { Component } from "react";
+import React, {ReactNode} from 'react';
+
+type MyAppHeaderTextProps = {
+
+    children: ReactNode
+
+}
+class MyAppHeaderText extends Component<MyAppHeaderTextProps> {
+
+    render() {
+
+        return (
+
+          <MyAppText>
+
+            <Text style={{fontSize: 20, color:'red'}}>{this.props.children}</Text>
+
+          </MyAppText>
+
+        );
+
+      }
+
+    }
+    export default MyAppHeaderText;
+    
+/*Made a wrapper class around the already defined component having the specific style which can take up the newer classes for styling the components specifically*/
+
+Style Inheritance 
+
+```
+
+#Text_Input_Components 
+
+```
+import React from 'react';
+import {SafeAreaView, StyleSheet, TextInput} from 'react-native';
+
+const TextInputExample = () => {
+  const [text, onChangeText] = React.useState('Useless Text');
+  const [number, onChangeNumber] = React.useState('');
+
+  return (
+    <SafeAreaView>
+      <TextInput
+        style={styles.input}
+        onChangeText={onChangeText}
+        value={text}
+      />
+      <TextInput
+        style={styles.input}
+        onChangeText={onChangeNumber}
+        value={number}
+        placeholder="useless placeholder"
+        keyboardType="numeric"
+      />
+    </SafeAreaView>
+  );
+};
+
+const styles = StyleSheet.create({
+  input: {
+    height: 40,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
+  },
+});
+
+export default TextInputExample;
+```
+
+#Multiline_Text_Input
+
+```
+import React from 'react';
+import {View, TextInput} from 'react-native';
+
+const MultilineTextInputExample = () => {
+  const [value, onChangeText] = React.useState('Useless Multiline Placeholder');
+
+  // If you type something in the text box that is a color, the background will change to that
+  // color.
+  return (
+    <View
+      style={{
+        backgroundColor: value,
+        borderBottomColor: '#000000',
+        borderBottomWidth: 1,
+      }}>
+      <TextInput
+        editable
+        multiline
+        numberOfLines={4}
+        maxLength={40}
+        onChangeText={text => onChangeText(text)}
+        value={value}
+        style={{padding: 10}}
+      />
+    </View>
+  );
+};
+
+export default MultilineTextInputExample;
+```
+
+
+Scroll view and FlatList 
+
+#Scroll_View  renders all its react child components at once, 
+
+#Flatlist  renders items lazily when they are about to appear and pops out the itrems that scroll way off screen to save memory and processing time 
+
+#Style_Sheets Methods used 
+```
+static flatten(style: Object[]): Object;
+```
+
+flattens the array of style objects into one aggregated style object 
+
+Define the type of the data to be passed as an individual items having the specific properties  passed to the flatlist 
+
