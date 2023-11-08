@@ -1,7 +1,11 @@
-
-
-console.warm()--> warning message 
-console.error(new Error()) -> Error Message 
+---
+tags: 
+aliases:
+  - Notes
+  - Js
+  - Ts
+  - Node Js
+---
 
 #Architecture 
 
@@ -35,5 +39,132 @@ Node js Timer
 	clearImmediate()
 	clearInterval()
 	clearTimeout()
-	 
+		
+		console.warm()--> warning message 
+		console.error(new Error()) -> Error Message 
 	
+		
+	
+
+
+```
+document.getElementById("Demo").style.display = "block"
+Showing the hidden elements changing the display style 
+
+document.getElementById("demo").style.display = "none"
+
+
+Script tag 
+
+<script>
+	document.getElementById("demo").innerHTML = "My First Js";
+</script
+```
+
+```
+document.getElementById("Demo").style.display = "block"
+Showing the hidden elements changing the display style 
+
+document.getElementById("demo").style.display = "none"
+
+
+Script tag 
+
+<script>
+	document.getElementById("demo").innerHTML = "My First Js";
+</script
+```
+
+## Ways of Displaying 
+
+InnerhtmL
+```
+<!DOCTYPE html>  
+<html>  
+<body>  
+  
+<h1>My First Web Page</h1>  
+<p>My First Paragraph</p>  
+  
+<p id="demo"></p>  
+  
+<script>  
+document.getElementById("demo").innerHTML = 5 + 6;  
+</script>  
+  
+</body>  
+</html>
+```
+
+window.alert()
+
+```
+<!DOCTYPE html>  
+<html>  
+<body>  
+  
+<h1>My First Web Page</h1>  
+<p>My First Paragraph</p>  
+  
+<p id="demo"></p>  
+  
+<script>  
+document.getElementById("demo").innerHTML = 5 + 6;  
+</script>  
+  
+</body>  
+</html>
+
+
+<!DOCTYPE html>  
+<html>  
+<body>  
+  
+<h1>My First Web Page</h1>  
+<p>My first paragraph.</p>  
+  
+<script>  
+alert(5 + 6);  
+</script>  
+  
+</body>  
+</html>
+```
+
+
+Print 
+
+```
+<!DOCTYPE html>  
+<html>  
+<body>  
+  
+<button onclick="window.print()">Print this page</button>  
+  
+</body>  
+</html>
+
+```
+
+
+
+
+
+
+
+#let_Keyword 
+
+```
+Let kyword cannot be redeclared 
+Must be Declared before use 
+Let have block scope 
+```
+
+Block Scope 
+declared inside the scope cannot be used from outside the block 
+
+Let Hoisting 
+
+variables defined with var 
+
+
