@@ -4,55 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9794aca97df98826",
+        "id": "538dd1dc51dca57c",
         "type": "tabs",
         "children": [
           {
-            "id": "fdc600e0de2e45f6",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "78dad929a146dc6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Node js.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "968c7cb1de5a5782",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React Native.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4de4ede2625274ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React Native.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2a57c5586c43f563",
+            "id": "0348fe2a4d732bbd",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -63,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -191,12 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a57c5586c43f563",
+  "active": "0348fe2a4d732bbd",
   "lastOpenFiles": [
-    "TypeScript.md",
-    "Green Software.md",
     "Node js.md",
     "React Native.md",
+    "TypeScript.md",
+    "hello.md",
+    "Green Software.md",
     "Untitled.canvas",
     "Pasted image 20231102143739.png",
     "Pasted image 20231031121145.png",
