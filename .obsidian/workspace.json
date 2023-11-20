@@ -4,67 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "9794aca97df98826",
+        "id": "538dd1dc51dca57c",
         "type": "tabs",
+        "dimension": 21.83406113537118,
         "children": [
           {
-            "id": "fdc600e0de2e45f6",
+            "id": "0348fe2a4d732bbd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "78dad929a146dc6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "Node js.md",
-                "mode": "source",
-                "source": false
+                "file": "Chacha's Task List.md"
               }
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "45cf88684f492b87",
+        "type": "tabs",
+        "dimension": 78.16593886462883,
+        "children": [
           {
-            "id": "968c7cb1de5a5782",
+            "id": "e81b0693f03b62e6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React Native.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4de4ede2625274ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React Native.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2a57c5586c43f563",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React Native.md",
+                "file": "GQL React Native.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -114,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "0ab5491f308d0034",
@@ -130,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React Native.md",
+                "file": "GQL React Native.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React Native.md",
+                "file": "GQL React Native.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React Native.md"
+                "file": "GQL React Native.md"
               }
             }
           }
@@ -178,7 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -191,12 +165,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a57c5586c43f563",
+  "active": "e81b0693f03b62e6",
   "lastOpenFiles": [
-    "TypeScript.md",
-    "Green Software.md",
-    "Node js.md",
+    "Chacha's Task List.md",
+    "GQL React Native.md",
+    "Axios in React Native 1.md",
+    "Axios In React Native.md",
     "React Native.md",
+    "Untitled.md",
+    "Green Software.md",
+    "LubePlanner.md",
+    "Pasted image 20231115145328.png",
+    "Pasted image 20231115144336.png",
+    "Untitled",
+    "Node js.md",
+    "TypeScript.md",
+    "hello.md",
     "Untitled.canvas",
     "Pasted image 20231102143739.png",
     "Pasted image 20231031121145.png",

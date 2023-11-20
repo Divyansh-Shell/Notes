@@ -208,7 +208,7 @@ const MultilineTextInputExample = () => {
 export default MultilineTextInputExample;
 ```
 
-
+---
 Scroll view and FlatList 
 
 #Scroll_View  renders all its react child components at once, 
@@ -224,3 +224,103 @@ flattens the array of style objects into one aggregated style object
 
 Define the type of the data to be passed as an individual items having the specific properties  passed to the flatlist 
 
+---
+
+#Virtualization_list 
+
+Base Implementation of the Flatlist and sectionList components, this should only be really used when there is need of more flexibilty than Flatlist provides 
+
+Massively improves memory consumption and performance of large lists by maintaining a finite render window of active items like pagination which replaces all the items outside of the render window with appropriately sized blank spaces, content is rendered asynchronously offscreen. scrolling is faster then the fill rate and momentarily  
+
+---
+#Hooks 
+
+useRef :  creating and accesing the refrences to components or dom elements allows to intereact with the underlying  native components directly 
+	1. Accessing aand manipulating the DOM elements: Refrences the view,text and image or any other component 
+	2. Soring the mutabable  values without causing re-renders: useRef can be used to store the values that should persist between the renders without causing the rerenders
+
+---
+
+```
+import React from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
+  SectionList,
+  StatusBar,
+} from 'react-native';
+
+const DATA = [
+  {
+    title: 'Main dishes',
+    data: ['Pizza', 'Burger', 'Risotto'],
+  },
+  {
+    title: 'Sides',
+    data: ['French Fries', 'Onion Rings', 'Fried Shrimps'],
+  },
+  {
+    title: 'Drinks',
+    data: ['Water', 'Coke', 'Beer'],
+  },
+  {
+    title: 'Desserts',
+    data: ['Cheese Cake', 'Ice Cream'],
+  },
+];
+
+const App = () => (
+  <SafeAreaView style={styles.container}>
+    <SectionList
+      sections={DATA}
+      keyExtractor={(item, index) => item + index}
+      renderItem={({item}) => (
+        <View style={styles.item}>
+          <Text style={styles.title}>{item}</Text>
+        </View>
+      )}
+      renderSectionHeader={({section: {title}}) => (
+        <Text style={styles.header}>{title}</Text>
+      )}
+    />
+  </SafeAreaView>
+);
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingTop: StatusBar.currentHeight,
+    marginHorizontal: 16,
+  },
+  item: {
+    backgroundColor: '#f9c2ff',
+    padding: 20,
+    marginVertical: 8,
+  },
+  header: {
+    fontSize: 32,
+    backgroundColor: '#fff',
+  },
+  title: {
+    fontSize: 24,
+  },
+});
+
+export default App;
+```
+
+1. useRef hook is to make the reference to the native component DrawerNativeComponent to control the native methods of the drawer and it passed as ref to the component 
+
+
+Move the ios apps to apple shell playstore certify that 
+
+Postoffice help sends the mail to the endpoint 
+
+ToE Target Operating Environment
+
+Postoffice remediation 
+
+
+GO THROUGH TO SAHLDS --> own it to 
