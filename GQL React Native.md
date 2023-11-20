@@ -129,3 +129,65 @@ const QUERY = gql`
 `
 ```
 
+Defining the types and fields on those types, providing the functions for each field on each type 
+
+```{
+  hero {
+    name
+    # Queries can have comments!
+    friends {
+      name
+    }
+  }
+```
+
+Response: 
+
+```
+{
+  "data": {
+    "hero": {
+      "name": "R2-D2",
+      "friends": [
+        {
+          "name": "Luke Skywalker"
+        },
+        {
+          "name": "Han Solo"
+        },
+        {
+          "name": "Leia Organa"
+        }
+      ]
+    }
+  }
+}
+```
+
+Arguments: 
+
+```
+{
+
+  human(id: "1000") {
+
+    name
+
+    height
+
+  }
+
+}
+```
+
+```
+{
+  "data": {
+    "human": {
+      "name": "Luke Skywalker",
+      "height": 1.72
+    }
+  }
+}
+```
+
