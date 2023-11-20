@@ -312,4 +312,15 @@ export default App;
 ```
 
 1. useRef hook is to make the reference to the native component DrawerNativeComponent to control the native methods of the drawer and it passed as ref to the component 
-2. 
+
+
+Move the ios apps to apple shell playstore certify that 
+
+Postoffice help sends the mail to the endpoint 
+
+ToE Target Operating Environment
+
+Postoffice remediation 
+
+
+GO THROUGH TO SAHLDS --> own it to 

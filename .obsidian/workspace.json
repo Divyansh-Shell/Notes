@@ -6,14 +6,32 @@
       {
         "id": "538dd1dc51dca57c",
         "type": "tabs",
+        "dimension": 21.83406113537118,
         "children": [
           {
             "id": "0348fe2a4d732bbd",
             "type": "leaf",
             "state": {
+              "type": "kanban",
+              "state": {
+                "file": "Chacha's Task List.md"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "45cf88684f492b87",
+        "type": "tabs",
+        "dimension": 78.16593886462883,
+        "children": [
+          {
+            "id": "e81b0693f03b62e6",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "React Native.md",
+                "file": "GQL React Native.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "0ab5491f308d0034",
@@ -85,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React Native.md",
+                "file": "GQL React Native.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React Native.md",
+                "file": "GQL React Native.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React Native.md"
+                "file": "GQL React Native.md"
               }
             }
           }
@@ -133,7 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -146,13 +165,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0348fe2a4d732bbd",
+  "active": "e81b0693f03b62e6",
   "lastOpenFiles": [
-    "Node js.md",
+    "Chacha's Task List.md",
+    "GQL React Native.md",
+    "Axios in React Native 1.md",
+    "Axios In React Native.md",
     "React Native.md",
+    "Untitled.md",
+    "Green Software.md",
+    "LubePlanner.md",
+    "Pasted image 20231115145328.png",
+    "Pasted image 20231115144336.png",
+    "Untitled",
+    "Node js.md",
     "TypeScript.md",
     "hello.md",
-    "Green Software.md",
     "Untitled.canvas",
     "Pasted image 20231102143739.png",
     "Pasted image 20231031121145.png",
